@@ -11,12 +11,13 @@
 @family4: 'Bebas Neue Regular';
 @family5: 'Bebas Neue Book';
 
-
 @size1: 12px;
 @size2: 14px;
 @size3: 16px;
 @size4: 18px;
 @size5: 20px;
+
+@size-title-area: 40px;
 
 @font-face {
     font-family: 'Open Sans Light';
@@ -37,20 +38,19 @@
     src: local('Bebas Neue Book'), url('/src/fonts/BebasNeue Book.woff') format('woff');
 }
 
-
 header {
     width: 100%;
     height: 100vh;
     background: url('/src/img/header-background.jpg') no-repeat;
     -webkit-background-size: cover;
-    -o-background-size: cover;
     -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    nav{
+    nav {
         width: 100%;
         height: 98px;
         padding-top: 30px;
-        ul.left{
+        ul.left {
             float: left;
             li {
                 float: left;
@@ -64,7 +64,7 @@ header {
                 }
             }
         }
-        ul.right{
+        ul.right {
             float: right;
             li {
                 float: left;
@@ -117,10 +117,92 @@ header {
                         -moz-transition: 0.2s ease-in;
                         -o-transition: 0.2s ease-in;
                         transition: 0.2s ease-in;
-                        &:hover{
+                        &:hover {
                             color: @black;
                             background-color: #fff;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title-area {
+    width: 100%;
+    height: 98px;
+    margin: 58px auto;
+    text-align: center;
+    .title-area-border-top {
+        height: 2px;
+        width: 112px;
+        margin: 0 auto;
+        background-color: @colorprimary;
+    }
+    h1 {
+        height: 64px;
+        font-style: italic;
+        font-family: @family2;
+        font-size: @size-title-area;
+    }
+    .title-area-border-bottom {
+        height: 2px;
+        width: 112px;
+        margin: 0 auto;
+        background-color: @colorprimary;
+    }
+}
+.last-products {
+    display: block;
+    .men {
+        background: url('/src/img/men.jpg');
+    }
+    .woman {
+        background: url('/src/img/woman.jpg');
+    }
+    .watches {
+        background: url('/src/img/watches.jpg');
+    }
+    .last-products-box {
+        width: 370px;
+        height: 418px;
+        padding-top: 34px;
+        .last-products-hover {
+            display: none;
+        }
+        &:hover .last-products-hover {
+            display: block;
+            width: 310px;
+            height: 350px;
+            margin: 0 auto;
+            text-align: center;
+            border: 2px solid @white;
+            h1 {
+                color: @white;
+                line-height: 140px;
+                font-style: italic;
+                font-family: @family2;
+                font-size: @size-title-area;
+            }
+            .view-more {
+                margin-top: 60px;
+                a {
+                    border-radius: 4px;
+                    border: 2px solid @white;
+                    padding: 20px 44px 20px 44px;
+                    color: @white;
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    font-family: @family1;
+                    text-transform: uppercase;
+                    -webkit-transition: 0.2s ease-in;
+                    -moz-transition: 0.2s ease-in;
+                    -o-transition: 0.2s ease-in;
+                    transition: 0.2s ease-in;
+                    &:hover {
+                        color: @black;
+                        background-color: @white;
                     }
                 }
             }

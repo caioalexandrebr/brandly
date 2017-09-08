@@ -30,57 +30,46 @@
 </head>
 <body ng-controller="DemoCtrl">
 
-    <header class="bgParallax">
-        <div class="container">
-            <nav>
-                <ul class="left">
-                    <li><a href="#">Brand<font style="font-family: 'Bebas Neue Book'; font-size: 36px; margin-left: 8px;">ly</font></a></li>
-                </ul>
-                <ul class="right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Brands</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+    <div ng-include="'../view/header.html'"></div>
 
-            <div class="carousel">
-                <ul rn-carousel rn-carousel-index="carouselIndex2" rn-carousel-auto-slide rn-carousel-pause-on-hover rn-carousel-buffered class="carousel2">
-                    <li>
-                        <h1>Spring / Summer Collection</h1>
-                        <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
-                        <h1>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
-                        <div class="header-botao"><a href="/">Shop Now</a></div>
-                    </li>
-                    <li>                        
-                        <h1>Spring / Summer Collection</h1>
-                        <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
-                        <h1>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
-                        <div class="header-botao"><a href="/">Shop Now</a></div>
-                    </li>  
-                    <li>                        
-                        <h1>Spring / Summer Collection</h1>
-                        <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
-                        <h1>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
-                        <div class="header-botao"><a href="/">Shop Now</a></div>
-                    </li>   
-                    <li>                        
-                        <h1>Spring / Summer Collection</h1>
-                        <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
-                        <h1>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
-                        <div class="header-botao"><a href="/">Shop Now</a></div>
-                    </li>   
-                </ul>
-                <div class="rn-carousel-indicator">
-                    <span ng-repeat="slide in slides2" ng-class="{active: $index==$parent.carouselIndex2}" ng-click="$parent.carouselIndex2 = $index">    </span>
+    <div class="container">
+        <div class="last-products">
+            <div class="title-area">
+                <div class="title-area-border-top"></div>
+                <h1>Latest Products</h1>
+                <div class="title-area-border-bottom"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="last-products-box men">
+                        <div class="last-products-hover">
+                            <h1>Men</h1>
+                            <div class="view-more"><a href="/">View More</a></div>
+                        </div>
+                    </div>
                 </div>
-            <!--<div rn-carousel-indicators ng-if="slides2.length > 1" slides="slides2" rn-carousel-index="carouselIndex2"></div> -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="last-products-box men">
+                        <div class="last-products-hover">
+                            <h1>Men</h1>
+                            <div class="view-more"><a href="/">View More</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="last-products-box men">
+                        <div class="last-products-hover">
+                            <h1>Men</h1>
+                            <div class="view-more"><a href="/">View More</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-    
+    </div>
 
     Spring / Summer Collection
     UP TO 60% DISCOUNT ON NEW ARRIVALS

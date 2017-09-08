@@ -21,8 +21,8 @@ header {
   height: 100vh;
   background: url('/src/img/header-background.jpg') no-repeat;
   -webkit-background-size: cover;
-  -o-background-size: cover;
   -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 header nav {
@@ -102,4 +102,85 @@ header .carousel ul.carousel2 li .header-botao a {
 header .carousel ul.carousel2 li .header-botao a:hover {
   color: #000000;
   background-color: #fff;
+}
+.title-area {
+  width: 100%;
+  height: 98px;
+  margin: 58px auto;
+  text-align: center;
+}
+.title-area .title-area-border-top {
+  height: 2px;
+  width: 112px;
+  margin: 0 auto;
+  background-color: #dc0000;
+}
+.title-area h1 {
+  height: 64px;
+  font-style: italic;
+  font-family: "Open Sans Light", Arial;
+  font-size: 40px;
+}
+.title-area .title-area-border-bottom {
+  height: 2px;
+  width: 112px;
+  margin: 0 auto;
+  background-color: #dc0000;
+}
+.last-products {
+  display: block;
+}
+.last-products .men {
+  background: url('/src/img/men.jpg');
+}
+.last-products .woman {
+  background: url('/src/img/woman.jpg');
+}
+.last-products .watches {
+  background: url('/src/img/watches.jpg');
+}
+.last-products .last-products-box {
+  width: 370px;
+  height: 418px;
+  padding-top: 34px;
+}
+.last-products .last-products-box .last-products-hover {
+  display: none;
+}
+.last-products .last-products-box:hover .last-products-hover {
+  display: block;
+  width: 310px;
+  height: 350px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #ffffff;
+}
+.last-products .last-products-box:hover .last-products-hover h1 {
+  color: #ffffff;
+  line-height: 140px;
+  font-style: italic;
+  font-family: "Open Sans Light", Arial;
+  font-size: 40px;
+}
+.last-products .last-products-box:hover .last-products-hover .view-more {
+  margin-top: 60px;
+}
+.last-products .last-products-box:hover .last-products-hover .view-more a {
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  padding: 20px 44px 20px 44px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: "Lato", Arial;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.last-products .last-products-box:hover .last-products-hover .view-more a:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
