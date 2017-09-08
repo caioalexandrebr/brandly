@@ -151,6 +151,20 @@ header .carousel ul.carousel2 li .header-botao a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
+.last-products .img40-off {
+  background: url('/src/img/40-off.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.last-products .mega-sale {
+  background: url('/src/img/mega-sale.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .last-products .last-products-box {
   width: 100%;
   height: 418px;
@@ -169,10 +183,16 @@ header .carousel ul.carousel2 li .header-botao a:hover {
 }
 .last-products .last-products-box:hover .last-products-hover h1 {
   color: #ffffff;
-  line-height: 140px;
   font-style: italic;
   font-family: "Open Sans Light", Arial;
   font-size: 40px;
+}
+.last-products .last-products-box:hover .last-products-hover h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Lato", Arial;
+  text-transform: uppercase;
 }
 .last-products .last-products-box:hover .last-products-hover .view-more {
   margin-top: 60px;
@@ -195,4 +215,57 @@ header .carousel ul.carousel2 li .header-botao a:hover {
 .last-products .last-products-box:hover .last-products-hover .view-more a:hover {
   color: #000000;
   background-color: #ffffff;
+}
+.container-trending-items {
+  background: url('/src/img/trending-bg.jpg');
+}
+.container-trending-items .carousel ul.carousel2 {
+  width: 100%;
+  height: 600px;
+}
+.container-trending-items .carousel ul.carousel2 li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.container-trending-items .carousel ul.carousel2 li .trending-item {
+  width: 570px;
+  height: 570px;
+  background: url('/src/img/trending-item.jpg');
+}
+.container-trending-items .carousel ul.carousel2 li h1 {
+  color: #dc0000;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Lato", Arial;
+  text-transform: uppercase;
+}
+.container-trending-items .carousel ul.carousel2 li h2 {
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 700;
+  font-family: "Lato", Arial;
+  text-transform: uppercase;
+}
+.container-trending-items .carousel ul.carousel2 li .header-botao {
+  margin-top: 60px;
+}
+.container-trending-items .carousel ul.carousel2 li .header-botao a {
+  border-radius: 4px;
+  border: 2px solid #FFFFFF;
+  padding: 20px 44px 20px 44px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: "Lato", Arial;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.container-trending-items .carousel ul.carousel2 li .header-botao a:hover {
+  color: #000000;
+  background-color: #fff;
 }
