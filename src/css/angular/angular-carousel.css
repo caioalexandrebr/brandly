@@ -37,11 +37,21 @@ ul[rn-carousel-transition="hexagon"] {
   overflow: visible; }
 
 /* indicators */
+div.rn-carousel-indicator {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
 div.rn-carousel-indicator span {
   cursor: pointer;
-  color: #666; }
+  border-radius: 500px;
+  margin: 0 4px 0px 4px;
+  background-color: #FFF;
+}
   div.rn-carousel-indicator span.active {
-    color: white; }
+    border: 2px solid #FFF;
+    background-color: transparent;
+}
 
 /* prev/next controls */
 .rn-carousel-control {

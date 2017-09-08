@@ -11,23 +11,117 @@
     <link href="src/css/angular/angular-carousel.css" rel="stylesheet" type="text/css" />
     <link href="src/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="src/css/main.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <style>
+    .bgParallax {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1920px;
+        position: relative;
+        min-height: 100%;
+        background-position: 50% 0;
+        background-repeat: repeat;
+        background-attachment: fixed;
+
+    }
+    </style>
 </head>
 <body ng-controller="DemoCtrl">
-    
-    <div class="carousel-demo">
-            <ul rn-carousel rn-carousel-index="carouselIndex2" rn-carousel-auto-slide rn-carousel-pause-on-hover rn-carousel-buffered class="carousel2">
-                <li><div class=""></div></li>
-                <li><div class=""></div></li>
-                <li><div class=""></div></li>
-                <li><div class=""></div></li>      
-            </ul>
-            <div class="rn-carousel-indicator custom-indicator">
-                <span ng-repeat="slide in slides2" ng-class="{active: $index==$parent.carouselIndex2}" ng-click="$parent.carouselIndex2 = $index">◯</span>
+
+    <header class="bgParallax">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Brand ly</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="carousel">
+                <ul rn-carousel rn-carousel-index="carouselIndex2" rn-carousel-auto-slide rn-carousel-pause-on-hover rn-carousel-buffered class="carousel2">
+                    <li>
+                        <h1>Spring / Summer Collection</h1>
+                        <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
+                        <h1>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
+                        <div class="header-botao"><a href="/">Shop Now</a></div>
+                    </li>
+                    <li>                        
+                        <h1>Spring / Summer Collection</h1>
+                        <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
+                        <h1>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
+                        <div class="header-botao"><a href="/">Shop Now</a></div>
+                    </li>  
+                    <li>                        
+                        <h1>Spring / Summer Collection</h1>
+                        <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
+                        <h1>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
+                        <div class="header-botao"><a href="/">Shop Now</a></div>
+                    </li>   
+                    <li>                        
+                        <h1>Spring / Summer Collection</h1>
+                        <h2>UP TO 60% DISCOUNT ON NEW ARRIVALS</h2>
+                        <h1>TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD</h3>
+                        <div class="header-botao"><a href="/">Shop Now</a></div>
+                    </li>   
+                </ul>
+                <div class="rn-carousel-indicator">
+                    <span ng-repeat="slide in slides2" ng-class="{active: $index==$parent.carouselIndex2}" ng-click="$parent.carouselIndex2 = $index">    </span>
+                </div>
+            <!--<div rn-carousel-indicators ng-if="slides2.length > 1" slides="slides2" rn-carousel-index="carouselIndex2"></div> -->
             </div>
-        <!--<div rn-carousel-indicators ng-if="slides2.length > 1" slides="slides2" rn-carousel-index="carouselIndex2"></div> -->
-    </div>
+        </div>
+    </header>
     
+
+    Spring / Summer Collection
+    UP TO 60% DISCOUNT ON NEW ARRIVALS
+    TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD
+
+    SHOP NOW                            Spring / Summer Collection
+    UP TO 60% DISCOUNT ON NEW ARRIVALS
+    TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD
+
+    SHOP NOW                            Spring / Summer Collection
+    UP TO 60% DISCOUNT ON NEW ARRIVALS
+    TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD
+
+    SHOP NOW                            Spring / Summer Collection
+    UP TO 60% DISCOUNT ON NEW ARRIVALS
+    TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD
+
+    SHOP NOW                            Spring / Summer Collection
+    UP TO 60% DISCOUNT ON NEW ARRIVALS
+    TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD
+
+    SHOP NOW
 </body>
+
+<script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
+
+<!-- jQuery Parallax -->
+<script>
+$('div.bgParallax').each(function(){
+    var $obj = $(this);
+
+    $(window).scroll(function() {
+        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+
+        var bgpos = '50% '+ yPos + 'px';
+
+        $obj.css('background-position', bgpos );
+
+    }); 
+});
+</script>
+<!-- Angular Carousel -->
 <script>
         angular.module('DemoApp', [
             'angular-carousel'
