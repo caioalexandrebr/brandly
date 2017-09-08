@@ -128,19 +128,31 @@ header .carousel ul.carousel2 li .header-botao a:hover {
   background-color: #dc0000;
 }
 .last-products {
-  display: block;
+  padding-bottom: 58px;
 }
 .last-products .men {
   background: url('/src/img/men.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .last-products .woman {
   background: url('/src/img/woman.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .last-products .watches {
   background: url('/src/img/watches.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .last-products .last-products-box {
-  width: 370px;
+  width: 100%;
   height: 418px;
   padding-top: 34px;
 }
@@ -149,7 +161,7 @@ header .carousel ul.carousel2 li .header-botao a:hover {
 }
 .last-products .last-products-box:hover .last-products-hover {
   display: block;
-  width: 310px;
+  width: 80%;
   height: 350px;
   margin: 0 auto;
   text-align: center;
