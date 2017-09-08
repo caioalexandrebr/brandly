@@ -187,6 +187,9 @@ header .carousel ul.carousel2 li .header-botao a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
+.last-products .margin-box {
+  margin-top: 30px;
+}
 .last-products .last-products-box {
   width: 100%;
   height: 418px;
