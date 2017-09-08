@@ -344,3 +344,87 @@ header {
         }
     }
 }
+
+
+footer {
+    width: 100%;
+    height: 410px;
+    .subscribe {
+        width: 100%;
+        height: 222px;
+        padding: 22px 0 0 0;
+        background: url('/src/img/subscribe-bg.jpg') no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        .subscribe-left {
+            float: left;
+            h1 {
+                color: @white;
+                line-height: 50px;
+                font-size: @size4;
+                font-family: @family2;
+            }
+            input[name="name"] {
+                background-color: rgba(255, 255, 255, 0.0);
+                background-image: url('/src/img/imput-email.png');
+                background-position: 30px 14px;
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 80px;
+                border: 1px solid @white;
+                box-sizing: border-box;
+                height: 50px;
+                width: 100%;
+                float: left;
+                outline: 0;
+
+                color: #ffffff;
+                font-size: @size2;
+                font-family: @family2;
+                text-transform: uppercase;
+                
+                -webkit-transition: 0.5s ease-in;
+                -moz-transition: 0.5s ease-in;
+                -o-transition: 0.5s ease-in;
+                transition: 0.5s ease-in;
+            }
+            input[name="name"]:focus {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+        .subscribe-right {
+            float: right;
+            margin-top: 80px;
+            a {
+                .subscribe-botao {
+                    width: 270px;
+                    height: 50px;
+                    color: @color1;
+                    font-weight: 700;
+                    font-size: @size3;
+                    text-align: center;
+                    display:table-cell;    /*Add this*/
+                    vertical-align:middle; /*Change to middle*/
+                    font-family: @family3;
+                    background-color: @white;
+                }
+            }
+        }
+    }
+    .footer_autor{
+        margin-top: 50px;
+        color: @color1;
+        font-size: 22px;
+        text-align: center;
+        line-height: 100px;
+        font-family: @family4;
+        a{  
+            color: @color1;
+            text-decoration: none;
+            &:hover {
+                color: @colorprimary;
+            }
+        }
+    }
+}
