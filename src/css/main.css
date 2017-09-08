@@ -48,5 +48,17 @@ header .carousel ul.carousel2 li .header-botao a {
   border: 2px solid #FFFFFF;
   padding: 20px 44px 20px 44px;
   color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: "Lato", Arial;
   text-transform: uppercase;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+header .carousel ul.carousel2 li .header-botao a:hover {
+  color: #000000;
+  background-color: #fff;
 }
