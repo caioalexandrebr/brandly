@@ -14,19 +14,6 @@
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-    <style>
-    .bgParallax {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1920px;
-        position: relative;
-        min-height: 100%;
-        background-position: 50% 0;
-        background-repeat: repeat;
-        background-attachment: fixed;
-
-    }
-    </style>
 </head>
 <body ng-controller="DemoCtrl">
 
@@ -41,22 +28,6 @@
 </body>
 
 <script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
-
-<!-- jQuery Parallax -->
-<script>
-$('div.bgParallax').each(function(){
-    var $obj = $(this);
-
-    $(window).scroll(function() {
-        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-
-        var bgpos = '50% '+ yPos + 'px';
-
-        $obj.css('background-position', bgpos );
-
-    }); 
-});
-</script>
 <!-- Angular Carousel -->
 <script>
         angular.module('DemoApp', [
@@ -190,4 +161,18 @@ $('div.bgParallax').each(function(){
             }
         })
     </script>
+    <script>
+    function scrollBanner() {
+  var scrollPos;
+  var headerText = document.querySelector('header .container');
+  scrollPos = window.scrollY;
+
+  if (scrollPos <= 600) {
+      headerText.style.transform =  "translateY(" + (-scrollPos/3) +"px" + ")";
+      headerText.style.opacity = 1 - (scrollPos/600);
+  }
+}
+
+window.addEventListener('scroll', scrollBanner);
+</script>
 </html>
