@@ -18,7 +18,7 @@
 }
 /* Indicator Header */
 .indicator-header {
-  margin: 0 auto;
+  margin: 75vh auto;
 }
 .indicator-header span {
   background-color: #FFF;
@@ -92,21 +92,21 @@ header nav ul.right li a:hover {
   color: #dc0000;
 }
 header .header-center {
-  left: 50%;
   top: 50%;
+  left: 50%;
   position: absolute;
   width: 900px;
   /* Valor da Largura */
-  height: 450px;
+  height: 400px;
   /* Valor da Altura */
   margin-left: -450px;
   /* Metade do valor da Largura */
-  margin-top: -225px;
+  margin-top: -200px;
   /* Metade da valor da Altura */
 }
 header .header-center .carousel ul.carousel-header {
   width: 900px;
-  height: 450px;
+  height: 400px;
 }
 header .header-center .carousel ul.carousel-header li {
   text-align: center;
@@ -125,17 +125,14 @@ header .header-center .carousel ul.carousel-header li h2 {
   font-family: "Lato", Arial;
   text-transform: uppercase;
 }
-header .header-center .carousel ul.carousel-header li .header-botao {
-  margin-top: 60px;
-}
-header .header-center .carousel ul.carousel-header li .header-botao a {
+header .header-center .carousel ul.carousel-header li button {
   border-radius: 4px;
   border: 2px solid #ffffff;
   padding: 20px 44px 20px 44px;
+  background-color: transparent;
   color: #ffffff;
-  font-size: 18px;
   font-weight: 700;
-  text-decoration: none;
+  font-size: 18px;
   font-family: "Lato", Arial;
   text-transform: uppercase;
   -webkit-transition: 0.2s ease-in;
@@ -143,7 +140,7 @@ header .header-center .carousel ul.carousel-header li .header-botao a {
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
-header .header-center .carousel ul.carousel-header li .header-botao a:hover {
+header .header-center .carousel ul.carousel-header li button:hover {
   color: #000000;
   background-color: #ffffff;
 }

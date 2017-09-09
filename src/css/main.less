@@ -43,7 +43,7 @@
 
 /* Indicator Header */
 .indicator-header {
-    margin: 0 auto;
+    margin: 75vh auto;
 }
 .indicator-header span {
     background-color: #FFF;
@@ -73,8 +73,6 @@
     background-position: 50% 0;
     background-attachment: fixed;
 }
-
-
 header {
     background-image: url('@{base-url}img/header-background.jpg');
     background-size: cover;
@@ -119,17 +117,17 @@ header {
         }
     }
     .header-center {
-        left:50%;
-        top:50%;
+        top: 50%;
+        left: 50%;
         position: absolute;
         width: 900px; /* Valor da Largura */
-        height: 450px; /* Valor da Altura */
+        height: 400px; /* Valor da Altura */
         margin-left: -450px; /* Metade do valor da Largura */
-        margin-top: -225px; /* Metade da valor da Altura */
+        margin-top: -200px; /* Metade da valor da Altura */
         .carousel {
             ul.carousel-header {
                 width: 900px;
-                height: 450px;
+                height: 400px;
                 li {
                     text-align: center;
                     h1 {
@@ -146,26 +144,23 @@ header {
                         font-family: @family1;
                         text-transform: uppercase;
                     }
-                    .header-botao {
-                        margin-top: 60px;
-                        a {
-                            border-radius: 4px;
-                            border: 2px solid @white;
-                            padding: 20px 44px 20px 44px;
-                            color: @white;
-                            font-size: @size4;
-                            font-weight: 700;
-                            text-decoration: none;
-                            font-family: @family1;
-                            text-transform: uppercase;
-                            -webkit-transition: 0.2s ease-in;
-                            -moz-transition: 0.2s ease-in;
-                            -o-transition: 0.2s ease-in;
-                            transition: 0.2s ease-in;
-                            &:hover {
-                                color: @black;
-                                background-color: @white;
-                            }
+                    button {
+                        border-radius: 4px;
+                        border: 2px solid @white;
+                        padding: 20px 44px 20px 44px;
+                        background-color: transparent;
+                        color: @white;
+                        font-weight: 700;
+                        font-size: @size4;
+                        font-family: @family1;
+                        text-transform: uppercase;
+                        -webkit-transition: 0.2s ease-in;
+                        -moz-transition: 0.2s ease-in;
+                        -o-transition: 0.2s ease-in;
+                        transition: 0.2s ease-in;
+                        &:hover {
+                            color: @black;
+                            background-color: @white;
                         }
                     }
                 }
