@@ -3,7 +3,8 @@
 @colorprimary: #dc0000;
 @color1: #333333;
 @color2: #777777;
-@base-url: "";
+
+@base-url: "/src/";
 
 @family1: "Lato", Arial;
 @family2: "Open Sans Light", Arial;
@@ -11,12 +12,13 @@
 @family4: 'Bebas Neue Regular';
 @family5: 'Bebas Neue Book';
 
-
 @size1: 12px;
 @size2: 14px;
 @size3: 16px;
 @size4: 18px;
 @size5: 20px;
+@size6: 22px;
+@size7: 30px;
 
 @size-title-area: 40px;
 
@@ -30,13 +32,13 @@
     font-family: 'Bebas Neue Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Bebas Neue Regular'), url('/src/fonts/BebasNeue Regular.woff') format('woff');
+    src: local('Bebas Neue Regular'), url('@{base-url}fonts/BebasNeue Regular.woff') format('woff');
 }
 @font-face {
     font-family: 'Bebas Neue Book';
     font-style: normal;
     font-weight: normal;
-    src: local('Bebas Neue Book'), url('/src/fonts/BebasNeue Book.woff') format('woff');
+    src: local('Bebas Neue Book'), url('@{base-url}fonts/BebasNeue Book.woff') format('woff');
 }
 
 /* Indicator Header */
@@ -65,7 +67,7 @@
 header {
     width: 100%;
     height: 100vh;
-    background: url('/src/img/header-background.jpg') no-repeat;
+    background: url('@{base-url}img/header-background.jpg') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -99,6 +101,9 @@ header {
                     font-size: @size4;
                     text-decoration: none;
                     font-family: @family3;
+                    &:hover {
+                        color: @colorprimary;
+                    }
                 }
             }
         }
@@ -113,7 +118,7 @@ header {
                 text-align: center;
                 h1 {
                     color: @white;
-                    font-size: 30px;
+                    font-size: @size7;
                     line-height: 60px;
                     font-family: @family2;
                     text-transform: uppercase;
@@ -129,10 +134,10 @@ header {
                     margin-top: 60px;
                     a {
                         border-radius: 4px;
-                        border: 2px solid #FFFFFF;
+                        border: 2px solid @white;
                         padding: 20px 44px 20px 44px;
                         color: @white;
-                        font-size: 18px;
+                        font-size: @size4;
                         font-weight: 700;
                         text-decoration: none;
                         font-family: @family1;
@@ -143,7 +148,7 @@ header {
                         transition: 0.2s ease-in;
                         &:hover {
                             color: @black;
-                            background-color: #fff;
+                            background-color: @white;
                         }
                     }
                 }
@@ -151,6 +156,7 @@ header {
         }
     }
 }
+/* --------- end header --------- */
 
 .title-area {
     width: 100%;
@@ -179,35 +185,35 @@ header {
 .last-products {
     padding-bottom: 60px;
     .men {
-        background: url('/src/img/men.jpg');
+        background: url('@{base-url}img/men.jpg');
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
     .woman {
-        background: url('/src/img/woman.jpg');
+        background: url('@{base-url}img/woman.jpg');
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
     .watches {
-        background: url('/src/img/watches.jpg');
+        background: url('@{base-url}img/watches.jpg');
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
     .img40-off {
-        background: url('/src/img/40-off.jpg');
+        background: url('@{base-url}img/40-off.jpg');
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
     .mega-sale {
-        background: url('/src/img/mega-sale.jpg');
+        background: url('@{base-url}img/mega-sale.jpg');
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -239,10 +245,9 @@ header {
             h2 {
                 color: @white;
                 font-weight: 700;
-                font-size: @size-title-area;
                 font-family: @family1;
                 text-transform: uppercase;
-                
+                font-size: @size-title-area;
             }
             .view-more {
                 margin-top: 60px;
@@ -251,8 +256,8 @@ header {
                     border: 2px solid @white;
                     padding: 20px 44px 20px 44px;
                     color: @white;
-                    font-size: 18px;
                     font-weight: 700;
+                    font-size: @size4;
                     text-decoration: none;
                     font-family: @family1;
                     text-transform: uppercase;
@@ -269,11 +274,12 @@ header {
         }
     }
 }
+/* --------- end last-products --------- */
 
 .container-trending-items {
     width: 100%;
     height: 918px;
-    background: url('/src/img/trending-bg.jpg') repeat-x;
+    background: url('@{base-url}img/trending-bg.jpg') repeat-x;
     .carousel {
         ul.carousel2 {
             width: 100%;
@@ -283,12 +289,12 @@ header {
                 .trending-item {
                     width: 100%;
                     min-height: 570px;
-                    background: url('/src/img/trending-item.jpg');
+                    background: url('@{base-url}img/trending-item.jpg');
                 }
                 h1 {
-                    color: @colorprimary;
-                    font-size: 30px;
                     font-weight: 700;
+                    font-size: @size7;
+                    color: @colorprimary;
                     font-family: @family1;
                     text-transform: uppercase;
                 }
@@ -315,8 +321,8 @@ header {
                         font-weight: 700;
                         font-size: @size3;
                         text-align: center;
-                        display:table-cell;    /*Add this*/
-                        vertical-align:middle; /*Change to middle*/
+                        display: table-cell;    /* Add this */
+                        vertical-align: middle; /* Change to middle */
                         font-family: @family3;
                         &:hover {
                             color: @white;
@@ -331,8 +337,8 @@ header {
                         font-weight: 700;
                         font-size: @size3;
                         text-align: center;
-                        display:table-cell;    /*Add this*/
-                        vertical-align:middle; /*Change to middle*/
+                        display: table-cell;    /* Add this */
+                        vertical-align: middle; /* Change to middle */
                         font-family: @family3;
                         &:hover {
                             color: @white;
@@ -344,7 +350,7 @@ header {
         }
     }
 }
-
+/* --------- end trending-items --------- */
 
 footer {
     width: 100%;
@@ -353,7 +359,7 @@ footer {
         width: 100%;
         height: 222px;
         padding: 22px 0 0 0;
-        background: url('/src/img/subscribe-bg.jpg') no-repeat;
+        background: url('@{base-url}img/subscribe-bg.jpg') no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -368,7 +374,7 @@ footer {
             }
             input[name="name"] {
                 background-color: rgba(255, 255, 255, 0.0);
-                background-image: url('/src/img/imput-email.png');
+                background-image: url('@{base-url}img/imput-email.png');
                 background-position: 30px 14px;
                 background-repeat: no-repeat;
                 padding: 12px 20px 12px 80px;
@@ -378,12 +384,10 @@ footer {
                 width: 100%;
                 float: left;
                 outline: 0;
-
                 color: #ffffff;
                 font-size: @size2;
                 font-family: @family2;
                 text-transform: uppercase;
-                
                 -webkit-transition: 0.5s ease-in;
                 -moz-transition: 0.5s ease-in;
                 -o-transition: 0.5s ease-in;
@@ -404,8 +408,8 @@ footer {
                     font-weight: 700;
                     font-size: @size3;
                     text-align: center;
-                    display:table-cell;    /*Add this*/
-                    vertical-align:middle; /*Change to middle*/
+                    display: table-cell;    /* Add this */
+                    vertical-align: middle; /* Change to middle */
                     font-family: @family3;
                     background-color: @white;
                 }
@@ -413,11 +417,9 @@ footer {
         }
     }
     .footer_autor{
-        margin-top: 50px;
         color: @color1;
-        font-size: 22px;
-        text-align: center;
-        line-height: 100px;
+        margin-top: 78px;
+        font-size: @size6;
         font-family: @family4;
         a{  
             color: @color1;
@@ -428,3 +430,4 @@ footer {
         }
     }
 }
+/* --------- end footer --------- */
