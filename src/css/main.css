@@ -53,6 +53,7 @@ header {
   width: 100%;
   position: fixed;
   height: 100vh;
+  position: relative;
 }
 header nav {
   width: 100%;
@@ -90,33 +91,44 @@ header nav ul.right li a {
 header nav ul.right li a:hover {
   color: #dc0000;
 }
-header .carousel ul.carousel2 {
-  width: 100%;
-  height: 600px;
+header .header-center {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  width: 900px;
+  /* Valor da Largura */
+  height: 450px;
+  /* Valor da Altura */
+  margin-left: -450px;
+  /* Metade do valor da Largura */
+  margin-top: -225px;
+  /* Metade da valor da Altura */
 }
-header .carousel ul.carousel2 li {
-  width: 100%;
-  height: 100%;
+header .header-center .carousel ul.carousel-header {
+  width: 900px;
+  height: 450px;
+}
+header .header-center .carousel ul.carousel-header li {
   text-align: center;
 }
-header .carousel ul.carousel2 li h1 {
+header .header-center .carousel ul.carousel-header li h1 {
   color: #ffffff;
   font-size: 30px;
   line-height: 60px;
   font-family: "Open Sans Light", Arial;
   text-transform: uppercase;
 }
-header .carousel ul.carousel2 li h2 {
+header .header-center .carousel ul.carousel-header li h2 {
   color: #ffffff;
   font-size: 54px;
   font-weight: 700;
   font-family: "Lato", Arial;
   text-transform: uppercase;
 }
-header .carousel ul.carousel2 li .header-botao {
+header .header-center .carousel ul.carousel-header li .header-botao {
   margin-top: 60px;
 }
-header .carousel ul.carousel2 li .header-botao a {
+header .header-center .carousel ul.carousel-header li .header-botao a {
   border-radius: 4px;
   border: 2px solid #ffffff;
   padding: 20px 44px 20px 44px;
@@ -131,7 +143,7 @@ header .carousel ul.carousel2 li .header-botao a {
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
-header .carousel ul.carousel2 li .header-botao a:hover {
+header .header-center .carousel ul.carousel-header li .header-botao a:hover {
   color: #000000;
   background-color: #ffffff;
 }
