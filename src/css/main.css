@@ -471,6 +471,8 @@ header .header-center .carousel ul.carousel-header li button:hover {
 }
 .article-share {
   width: 100%;
+  height: 190px;
+  margin-bottom: 4px;
   background: url('/src/img/trending-bg.jpg') repeat-x;
   -webkit-background-size: cover;
   -moz-background-size: cover;
