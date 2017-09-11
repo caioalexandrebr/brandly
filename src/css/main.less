@@ -290,12 +290,12 @@ header {
 
 .container-trending-items {
     width: 100%;
-    height: 918px;
+    height: 1018px;
     background: url('@{base-url}img/trending-bg.jpg') repeat-x;
     .carousel {
         ul.carousel2 {
             width: 100%;
-            height: 570px;
+            height: 670px;
             li {
                 width: 100%;
                 .trending-item {
@@ -318,25 +318,29 @@ header {
                 .margin-box {
                     margin-top: 30px;
                 }
+                button {
+                    border-radius: 0px;
+                    border: 1px solid @color1;
+                    padding: 10px 0 10px 0;
+                    width: 100%;
+                    background-color: transparent;
+                    color: @color1;
+                    font-weight: 700;
+                    font-size: @size3;
+                    font-family: @family3;
+                    text-transform: uppercase;
+                    -webkit-transition: 0.2s ease-in;
+                    -moz-transition: 0.2s ease-in;
+                    -o-transition: 0.2s ease-in;
+                    transition: 0.2s ease-in;
+                    &:hover {
+                        color: @white;
+                        background-color: @color1;
+                    }
+                }
                 a {
                     .box-size-smaller {
                         width: 68px;
-                        height: 48px;
-                        border: 1px solid @color1;
-                        color: @color1;
-                        font-weight: 700;
-                        font-size: @size3;
-                        text-align: center;
-                        display: table-cell;    /* Add this */
-                        vertical-align: middle; /* Change to middle */
-                        font-family: @family3;
-                        &:hover {
-                            color: @white;
-                            background-color: @color1;
-                        }
-                    }
-                    .box-size-larger {
-                        width: 168px;
                         height: 48px;
                         border: 1px solid @color1;
                         color: @color1;
@@ -403,7 +407,7 @@ header {
                 }
                 button {
                     border-radius: 0px;
-                    border: 2px solid @color1;
+                    border: 1px solid @color1;
                     padding: 10px 0 10px 0;
                     width: 100%;
                     background-color: transparent;
