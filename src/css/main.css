@@ -289,13 +289,7 @@ header .header-center .carousel ul.carousel-header li button:hover {
 .container-trending-items .carousel ul.carousel2 li h2 {
   color: #777777;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-}
-.container-trending-items .carousel ul.carousel2 li h3 {
-  color: #777777;
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-family: "Lato", Arial;
+  font-family: "Open Sans Light", Arial;
 }
 .container-trending-items .carousel ul.carousel2 li .margin-box {
   margin-top: 30px;
@@ -337,6 +331,72 @@ header .header-center .carousel ul.carousel-header li button:hover {
   background-color: #333333;
 }
 /* --------- end trending-items --------- */
+.container-from-the-blog {
+  width: 100%;
+  height: 1118px;
+  background-color: #ffffff;
+}
+.container-from-the-blog .carousel ul.carousel2 {
+  width: 100%;
+  height: 770px;
+}
+.container-from-the-blog .carousel ul.carousel2 li {
+  width: 100%;
+}
+.container-from-the-blog .carousel ul.carousel2 li .from-the-blog {
+  width: 100%;
+  min-height: 400px;
+}
+.container-from-the-blog .carousel ul.carousel2 li .ficure-first {
+  background: url('/src/img/blog-ficure-first.jpg');
+}
+.container-from-the-blog .carousel ul.carousel2 li .ficure-second {
+  background: url('/src/img/blog-ficure-second.jpg');
+}
+.container-from-the-blog .carousel ul.carousel2 li #div {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0 20px 0;
+  background-color: #ecf0f1;
+}
+.container-from-the-blog .carousel ul.carousel2 li h1 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #dc0000;
+  font-family: "Lato", Arial;
+  text-transform: uppercase;
+}
+.container-from-the-blog .carousel ul.carousel2 li h2 {
+  color: #777777;
+  font-size: 18px;
+  font-family: "Open Sans Light", Arial;
+}
+.container-from-the-blog .carousel ul.carousel2 li h3 {
+  color: #333333;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+.container-from-the-blog .carousel ul.carousel2 li button {
+  border-radius: 0px;
+  border: 2px solid #333333;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  background-color: transparent;
+  color: #333333;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.container-from-the-blog .carousel ul.carousel2 li button:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+/* --------- end from-the-blog --------- */
 footer {
   width: 100%;
   height: 410px;
