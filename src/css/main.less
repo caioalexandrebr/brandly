@@ -82,6 +82,7 @@
     border: 2px solid @colorprimary;
 }
 /* --------- End Indicator --------- */
+
 .header-background {
     width: 100%;
     margin: 0 auto;
@@ -179,6 +180,57 @@ header {
                         &:hover {
                             color: @black;
                             background-color: @white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+    header {
+        nav {
+            height: 78px;
+            padding-top: 20px;
+            ul.left {
+                li {
+                    a {
+                        font-size: @size12;
+                    }
+                }
+            }
+            ul.right {
+                li {
+                    margin-left: 30px;
+                    a {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+        .header-center {
+            width: 768px; /* Valor da Largura */
+            height: 350px; /* Valor da Altura */
+            margin-left: -384px; /* Metade do valor da Largura */
+            margin-top: -175px; /* Metade da valor da Altura */
+            .carousel {
+                ul.carousel-header {
+                    width: 768px;
+                    height: 350px;
+                    li {
+                        h1 {
+                            font-size: @size5;
+                            line-height: @line4;
+                        }
+                        h2 {
+                            font-size: @size13;
+                        }
+                        button {
+                            padding: 16px 38px 16px 38px;
+                            font-size: @size3;
+                            &:hover {
+                            }
                         }
                     }
                 }
