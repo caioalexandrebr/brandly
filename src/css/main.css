@@ -274,11 +274,6 @@ header .header-center .carousel ul.carousel-header li button:hover {
 .container-trending-items .carousel ul.carousel2 li {
   width: 100%;
 }
-.container-trending-items .carousel ul.carousel2 li .trending-item {
-  width: 100%;
-  min-height: 570px;
-  background: url('/src/img/trending-item.jpg');
-}
 .container-trending-items .carousel ul.carousel2 li h1 {
   font-weight: 700;
   font-size: 30px;
