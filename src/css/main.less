@@ -3,6 +3,7 @@
 @colorprimary: #dc0000;
 @color1: #333333;
 @color2: #777777;
+@color3: #ecf0f1;
 
 @base-url: "/src/";
 
@@ -18,7 +19,24 @@
 @size4: 18px;
 @size5: 20px;
 @size6: 22px;
-@size7: 30px;
+@size7: 24px;
+@size8: 26px;
+@size9: 28px;
+@size10: 30px;
+@size11: 34px;
+@size12: 38px;
+@size13: 42px;
+@size14: 46px;
+@size15: 50px;
+
+@line1: 10px;
+@line2: 20px;
+@line3: 30px;
+@line4: 40px;
+@line5: 50px;
+@line6: 60px;
+
+@bold: 700; 
 
 @size-title-area: 40px;
 
@@ -41,29 +59,29 @@
     src: local('Bebas Neue Book'), url('@{base-url}fonts/BebasNeue Book.woff') format('woff');
 }
 
-/* Indicator Header */
+/* Header */
 .indicator-header {
     margin: 75vh auto;
 }
 .indicator-header span {
-    background-color: #FFF;
+    background-color: @white;
 }
 .indicator-header span.active {
-    border: 2px solid #FFF;
+    border: 2px solid @white;
     background-color: transparent;
 }
-/* Indicator Prending Items */
+/* prending-items and from-the-blog */
 .indicator-trending-item {
     margin: 30px auto;
 }
 .indicator-trending-item span {
-    background-color: #878787;
+    background-color: @color2;
 }
 .indicator-trending-item span.active {
-    border: 2px solid #dc0000;
     background-color: transparent;
+    border: 2px solid @colorprimary;
 }
-
+/* --------- End Indicator --------- */
 .header-background {
     width: 100%;
     margin: 0 auto;
@@ -74,12 +92,12 @@
     background-attachment: fixed;
 }
 header {
-    background-image: url('@{base-url}img/header-background.jpg');
-    background-size: cover;
     width: 100%;
-    position: fixed;
     height: 100vh;
+    position: fixed;
     position: relative;
+    background-size: cover;
+    background-image: url('@{base-url}img/header-background.jpg');
     nav {
         width: 100%;
         height: 98px;
@@ -90,8 +108,8 @@ header {
                 float: left;
                 list-style: none;
                 a {
-                    font-size: 48px;
-                    line-height: 30px;
+                    font-size: @size14;
+                    line-height: @line3;
                     color: @colorprimary;
                     text-decoration: none;
                     font-family: @family4;
@@ -133,14 +151,14 @@ header {
                     h1 {
                         color: @white;
                         font-size: @size7;
-                        line-height: 60px;
+                        line-height: @line6;
                         font-family: @family2;
                         text-transform: uppercase;
                     }
                     h2 {
                         color: @white;
-                        font-size: 54px;
-                        font-weight: 700;
+                        font-size: @size15;
+                        font-weight: @bold;
                         font-family: @family1;
                         text-transform: uppercase;
                     }
@@ -150,8 +168,8 @@ header {
                         padding: 20px 44px 20px 44px;
                         background-color: transparent;
                         color: @white;
-                        font-weight: 700;
                         font-size: @size4;
+                        font-weight: @bold;
                         font-family: @family1;
                         text-transform: uppercase;
                         -webkit-transition: 0.2s ease-in;
@@ -173,8 +191,8 @@ header {
 .title-area {
     width: 100%;
     height: 98px;
-    margin: 60px 0 60px 0;
     text-align: center;
+    margin: 60px 0 60px 0;
     .title-area-border-top {
         height: 2px;
         width: 112px;
@@ -242,9 +260,9 @@ header {
             display: none;
         }
         &:hover .last-products-hover {
-            display: block;
             width: 80%;
             height: 350px;
+            display: block;
             margin: 0 auto;
             text-align: center;
             border: 2px solid @white;
@@ -256,7 +274,7 @@ header {
             }
             h2 {
                 color: @white;
-                font-weight: 700;
+                font-weight: @bold;
                 font-family: @family1;
                 text-transform: uppercase;
                 font-size: @size-title-area;
@@ -268,7 +286,7 @@ header {
                     border: 2px solid @white;
                     padding: 20px 44px 20px 44px;
                     color: @white;
-                    font-weight: 700;
+                    font-weight: @bold;
                     font-size: @size4;
                     text-decoration: none;
                     font-family: @family1;
@@ -299,8 +317,8 @@ header {
             li {
                 width: 100%;
                 h1 {
-                    font-weight: 700;
                     font-size: @size7;
+                    font-weight: @bold;
                     color: @colorprimary;
                     font-family: @family1;
                     text-transform: uppercase;
@@ -314,13 +332,13 @@ header {
                     margin-top: 30px;
                 }
                 button {
-                    border-radius: 0px;
-                    border: 1px solid @color1;
-                    padding: 10px 0 10px 0;
                     width: 100%;
+                    border-radius: 0px;
+                    padding: 10px 0 10px 0;
+                    border: 1px solid @color1;
                     background-color: transparent;
                     color: @color1;
-                    font-weight: 700;
+                    font-weight: @bold;
                     font-size: @size3;
                     font-family: @family3;
                     text-transform: uppercase;
@@ -331,24 +349,6 @@ header {
                     &:hover {
                         color: @white;
                         background-color: @color1;
-                    }
-                }
-                a {
-                    .box-size-smaller {
-                        width: 68px;
-                        height: 48px;
-                        border: 1px solid @color1;
-                        color: @color1;
-                        font-weight: 700;
-                        font-size: @size3;
-                        text-align: center;
-                        display: table-cell;    /* Add this */
-                        vertical-align: middle; /* Change to middle */
-                        font-family: @family3;
-                        &:hover {
-                            color: @white;
-                            background-color: @color1;
-                        }
                     }
                 }
             }
@@ -381,11 +381,11 @@ header {
                     width: 100%;
                     height: 1px;
                     margin: 20px 0 20px 0;
-                    background-color: #ecf0f1;
+                    background-color: @color3;
                 }
                 h1 {
-                    font-weight: 700;
                     font-size: @size7;
+                    font-weight: @bold;
                     color: @colorprimary;
                     font-family: @family1;
                     text-transform: uppercase;
@@ -401,14 +401,14 @@ header {
                     font-family: @family3;
                 }
                 button {
-                    border-radius: 0px;
-                    border: 1px solid @color1;
-                    padding: 10px 0 10px 0;
                     width: 100%;
+                    border-radius: 0px;
+                    padding: 10px 0 10px 0;
+                    border: 1px solid @color1;
                     background-color: transparent;
                     color: @color1;
-                    font-weight: 700;
                     font-size: @size3;
+                    font-weight: @bold;
                     font-family: @family3;
                     text-transform: uppercase;
                     -webkit-transition: 0.2s ease-in;
@@ -442,15 +442,13 @@ footer {
             float: left;
             h1 {
                 color: @white;
-                line-height: 50px;
                 font-size: @size4;
+                line-height: @line5;
                 font-family: @family2;
             }
             input[name="name"] {
                 background-color: rgba(255, 255, 255, 0.0);
-                background-image: url('@{base-url}img/imput-email.png');
-                background-position: 30px 14px;
-                background-repeat: no-repeat;
+                background: url('@{base-url}img/imput-email.png') 30px 14px no-repeat;
                 padding: 12px 20px 12px 80px;
                 border: 1px solid @white;
                 box-sizing: border-box;
@@ -458,7 +456,7 @@ footer {
                 width: 100%;
                 float: left;
                 outline: 0;
-                color: #ffffff;
+                color: @white;
                 font-size: @size2;
                 font-family: @family2;
                 text-transform: uppercase;
@@ -479,11 +477,11 @@ footer {
                     width: 270px;
                     height: 50px;
                     color: @color1;
-                    font-weight: 700;
                     font-size: @size3;
+                    font-weight: @bold;
                     text-align: center;
-                    display: table-cell;    /* Add this */
-                    vertical-align: middle; /* Change to middle */
+                    display: table-cell;
+                    vertical-align: middle;
                     font-family: @family3;
                     background-color: @white;
                 }

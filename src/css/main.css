@@ -16,28 +16,29 @@
   font-weight: normal;
   src: local('Bebas Neue Book'), url('/src/fonts/BebasNeue Book.woff') format('woff');
 }
-/* Indicator Header */
+/* Header */
 .indicator-header {
   margin: 75vh auto;
 }
 .indicator-header span {
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 .indicator-header span.active {
-  border: 2px solid #FFF;
+  border: 2px solid #ffffff;
   background-color: transparent;
 }
-/* Indicator Prending Items */
+/* prending-items and from-the-blog */
 .indicator-trending-item {
   margin: 30px auto;
 }
 .indicator-trending-item span {
-  background-color: #878787;
+  background-color: #777777;
 }
 .indicator-trending-item span.active {
-  border: 2px solid #dc0000;
   background-color: transparent;
+  border: 2px solid #dc0000;
 }
+/* --------- End Indicator --------- */
 .header-background {
   width: 100%;
   margin: 0 auto;
@@ -48,12 +49,12 @@
   background-attachment: fixed;
 }
 header {
-  background-image: url('/src/img/header-background.jpg');
-  background-size: cover;
   width: 100%;
-  position: fixed;
   height: 100vh;
+  position: fixed;
   position: relative;
+  background-size: cover;
+  background-image: url('/src/img/header-background.jpg');
 }
 header nav {
   width: 100%;
@@ -68,7 +69,7 @@ header nav ul.left li {
   list-style: none;
 }
 header nav ul.left li a {
-  font-size: 48px;
+  font-size: 46px;
   line-height: 30px;
   color: #dc0000;
   text-decoration: none;
@@ -113,14 +114,14 @@ header .header-center .carousel ul.carousel-header li {
 }
 header .header-center .carousel ul.carousel-header li h1 {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 60px;
   font-family: "Open Sans Light", Arial;
   text-transform: uppercase;
 }
 header .header-center .carousel ul.carousel-header li h2 {
   color: #ffffff;
-  font-size: 54px;
+  font-size: 50px;
   font-weight: 700;
   font-family: "Lato", Arial;
   text-transform: uppercase;
@@ -131,8 +132,8 @@ header .header-center .carousel ul.carousel-header li button {
   padding: 20px 44px 20px 44px;
   background-color: transparent;
   color: #ffffff;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   font-family: "Lato", Arial;
   text-transform: uppercase;
   -webkit-transition: 0.2s ease-in;
@@ -148,8 +149,8 @@ header .header-center .carousel ul.carousel-header li button:hover {
 .title-area {
   width: 100%;
   height: 98px;
-  margin: 60px 0 60px 0;
   text-align: center;
+  margin: 60px 0 60px 0;
 }
 .title-area .title-area-border-top {
   height: 2px;
@@ -219,9 +220,9 @@ header .header-center .carousel ul.carousel-header li button:hover {
   display: none;
 }
 .last-products .last-products-box:hover .last-products-hover {
-  display: block;
   width: 80%;
   height: 350px;
+  display: block;
   margin: 0 auto;
   text-align: center;
   border: 2px solid #ffffff;
@@ -275,8 +276,8 @@ header .header-center .carousel ul.carousel-header li button:hover {
   width: 100%;
 }
 .container-trending-items .carousel ul.carousel2 li h1 {
+  font-size: 24px;
   font-weight: 700;
-  font-size: 30px;
   color: #dc0000;
   font-family: "Lato", Arial;
   text-transform: uppercase;
@@ -290,10 +291,10 @@ header .header-center .carousel ul.carousel-header li button:hover {
   margin-top: 30px;
 }
 .container-trending-items .carousel ul.carousel2 li button {
-  border-radius: 0px;
-  border: 1px solid #333333;
-  padding: 10px 0 10px 0;
   width: 100%;
+  border-radius: 0px;
+  padding: 10px 0 10px 0;
+  border: 1px solid #333333;
   background-color: transparent;
   color: #333333;
   font-weight: 700;
@@ -306,24 +307,6 @@ header .header-center .carousel ul.carousel-header li button:hover {
   transition: 0.2s ease-in;
 }
 .container-trending-items .carousel ul.carousel2 li button:hover {
-  color: #ffffff;
-  background-color: #333333;
-}
-.container-trending-items .carousel ul.carousel2 li a .box-size-smaller {
-  width: 68px;
-  height: 48px;
-  border: 1px solid #333333;
-  color: #333333;
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  display: table-cell;
-  /* Add this */
-  vertical-align: middle;
-  /* Change to middle */
-  font-family: 'Open Sans', sans-serif;
-}
-.container-trending-items .carousel ul.carousel2 li a .box-size-smaller:hover {
   color: #ffffff;
   background-color: #333333;
 }
@@ -357,8 +340,8 @@ header .header-center .carousel ul.carousel-header li button:hover {
   background-color: #ecf0f1;
 }
 .container-from-the-blog .carousel ul.carousel2 li h1 {
+  font-size: 24px;
   font-weight: 700;
-  font-size: 30px;
   color: #dc0000;
   font-family: "Lato", Arial;
   text-transform: uppercase;
@@ -374,14 +357,14 @@ header .header-center .carousel ul.carousel-header li button:hover {
   font-family: 'Open Sans', sans-serif;
 }
 .container-from-the-blog .carousel ul.carousel2 li button {
-  border-radius: 0px;
-  border: 1px solid #333333;
-  padding: 10px 0 10px 0;
   width: 100%;
+  border-radius: 0px;
+  padding: 10px 0 10px 0;
+  border: 1px solid #333333;
   background-color: transparent;
   color: #333333;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   -webkit-transition: 0.2s ease-in;
@@ -413,15 +396,13 @@ footer .subscribe .subscribe-left {
 }
 footer .subscribe .subscribe-left h1 {
   color: #ffffff;
-  line-height: 50px;
   font-size: 18px;
+  line-height: 50px;
   font-family: "Open Sans Light", Arial;
 }
 footer .subscribe .subscribe-left input[name="name"] {
   background-color: rgba(255, 255, 255, 0);
-  background-image: url('/src/img/imput-email.png');
-  background-position: 30px 14px;
-  background-repeat: no-repeat;
+  background: url('/src/img/imput-email.png') 30px 14px no-repeat;
   padding: 12px 20px 12px 80px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -449,13 +430,11 @@ footer .subscribe .subscribe-right a .subscribe-botao {
   width: 270px;
   height: 50px;
   color: #333333;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   text-align: center;
   display: table-cell;
-  /* Add this */
   vertical-align: middle;
-  /* Change to middle */
   font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
 }
